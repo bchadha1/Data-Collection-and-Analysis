@@ -26,17 +26,6 @@ DEFAULT_REST_TIMEOUT = os.getenv('DEFAULT_REST_TIMEOUT', 5)
 
 class TwitterAPI(object):
 
-    """Access REST API or Streaming API resources.
-
-    :param consumer_key: Twitter application consumer key
-    :param consumer_secret: Twitter application consumer secret
-    :param access_token_key: Twitter application access token key
-    :param access_token_secret: Twitter application access token secret
-    :param auth_type: "oAuth1" (default) or "oAuth2"
-    :param proxy_url: HTTPS proxy URL string (ex. "https://USER:PASSWORD@SERVER:PORT"),
-                      or dict of URLs (ex. {'http':'http://SERVER', 'https':'https://SERVER'})
-    """
-
     # static properties to be overridden if desired
     USER_AGENT = DEFAULT_USER_AGENT
     CONNECTION_TIMEOUT = DEFAULT_CONNECTION_TIMEOUT
