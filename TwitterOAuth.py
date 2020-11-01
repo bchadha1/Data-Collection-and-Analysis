@@ -29,19 +29,6 @@ class TwitterOAuth:
 
     @classmethod
     def read_file(cls, file_name=None):
-        """Read OAuth credentials from a text file.  File format:
-
-                consumer_key=YOUR_CONSUMER_KEY
-
-                consumer_secret=YOUR_CONSUMER_SECRET
-
-                access_token_key=YOUR_ACCESS_TOKEN
-
-                access_token_secret=YOUR_ACCESS_TOKEN_SECRET
-
-        :param file_name: File containing credentials or None (default) reads credentials
-                          from TwitterAPI/credentials.txt
-        """
         if file_name is None:
             path = os.path.dirname(__file__)
             file_name = os.path.join(path, 'credentials.txt')
