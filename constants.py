@@ -1,19 +1,3 @@
-"""
-	Constants For All Twitter Endpoints
-	-----------------------------------
-	
-	Version 1.1, Streaming API and REST API.
-	
-	URLs for each endpoint are composed of the following pieces:
-		PROTOCOL://{subdomain}.DOMAIN/VERSION/{resource}?{parameters}
-"""
-
-
-__author__ = "geduldig"
-__date__ = "February 3, 2012"
-__license__ = "MIT"
-
-
 PROTOCOL = 'https'
 DOMAIN = 'twitter.com'
 

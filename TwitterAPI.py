@@ -1,8 +1,3 @@
-__author__ = "geduldig"
-__date__ = "June 7, 2013"
-__license__ = "MIT"
-
-
 from .BearerAuth import BearerAuth as OAuth2
 from .constants import *
 from datetime import datetime
@@ -17,7 +12,6 @@ import ssl
 import time
 import os
 
-
 DEFAULT_USER_AGENT = os.getenv('DEFAULT_USER_AGENT', 'python-TwitterAPI')
 DEFAULT_CONNECTION_TIMEOUT = os.getenv('DEFAULT_CONNECTION_TIMEOUT', 5)
 DEFAULT_STREAMING_TIMEOUT = os.getenv('DEFAULT_STREAMING_TIMEOUT', 90)
@@ -25,7 +19,6 @@ DEFAULT_REST_TIMEOUT = os.getenv('DEFAULT_REST_TIMEOUT', 5)
 
 
 class TwitterAPI(object):
-
     # static properties to be overridden if desired
     USER_AGENT = DEFAULT_USER_AGENT
     CONNECTION_TIMEOUT = DEFAULT_CONNECTION_TIMEOUT
@@ -82,16 +75,16 @@ class TwitterAPI(object):
                                               CURATOR_VERSION,
                                               path)
         elif subdomain == 'ads-api':
-            return '%s://%s.%s/%s/%s'      % (PROTOCOL,
-                                              subdomain,
-                                              DOMAIN,
-                                              ADS_VERSION,
-                                              path)
+            return '%s://%s.%s/%s/%s' % (PROTOCOL,
+                                         subdomain,
+                                         DOMAIN,
+                                         ADS_VERSION,
+                                         path)
         elif subdomain == 'api' and 'labs/' in path:
-            return '%s://%s.%s/%s'         % (PROTOCOL,
-                                              subdomain,
-                                              DOMAIN,
-                                              path)        
+            return '%s://%s.%s/%s' % (PROTOCOL,
+                                      subdomain,
+                                      DOMAIN,
+                                      path)
         elif api_version == '1.1':
             return '%s://%s.%s/%s/%s.json' % (PROTOCOL,
                                               subdomain,
@@ -99,11 +92,11 @@ class TwitterAPI(object):
                                               api_version,
                                               path)
         elif api_version == '2':
-            return '%s://%s.%s/%s/%s'      % (PROTOCOL,
-                                              subdomain,
-                                              DOMAIN,
-                                              api_version,
-                                              path)
+            return '%s://%s.%s/%s/%s' % (PROTOCOL,
+                                         subdomain,
+                                         DOMAIN,
+                                         api_version,
+                                         path)
         else:
             raise Exception('Unsupported API version')
 
@@ -172,14 +165,14 @@ class TwitterAPI(object):
                 j = params
             else:
                 p = params
-            try:           
+            try:
                 if False and method == 'PUT':
-                    session.headers['Content-type'] = 'application/json'            
-                    data = params                        
+                    session.headers['Content-type'] = 'application/json'
+                    data = params
                     r = session.request(
                         method,
                         url,
-                        json=data)                
+                        json=data)
                 else:
                     r = session.request(
                         method,
@@ -200,7 +193,6 @@ class TwitterAPI(object):
 
 
 class TwitterResponse(object):
-
     """Response from either a REST API or Streaming API resource call.
 
     :param response: The requests.Response object returned by the API call
@@ -279,7 +271,6 @@ class TwitterResponse(object):
 
 
 class _RestIterable(object):
-
     """Iterate statuses, errors or other iterable objects in a REST API response.
 
     :param response: The request.Response from a Twitter REST API request
@@ -318,7 +309,6 @@ class _RestIterable(object):
 
 
 class _StreamingIterable(object):
-
     """Iterate statuses or other objects in a Streaming API response.
 
     :param response: The request.Response from a Twitter Streaming API request

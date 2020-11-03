@@ -1,8 +1,3 @@
-__author__ = "geduldig"
-__date__ = "November 30, 2014"
-__license__ = "MIT"
-
-
 import logging
 import json
 

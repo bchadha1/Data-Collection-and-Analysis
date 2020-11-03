@@ -1,8 +1,3 @@
-__author__ = "geduldig"
-__date__ = "June 8, 2013"
-__license__ = "MIT"
-
-
 from requests.exceptions import ConnectionError, ReadTimeout, SSLError
 from requests.packages.urllib3.exceptions import ReadTimeoutError, ProtocolError
 from .TwitterError import *

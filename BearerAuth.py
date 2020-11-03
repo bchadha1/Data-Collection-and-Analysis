@@ -1,8 +1,3 @@
-__author__ = "Andrea Biancini, geduldig"
-__date__ = "January 3, 2014"
-__license__ = "MIT"
-
-
 from .constants import *
 import base64
 import requests

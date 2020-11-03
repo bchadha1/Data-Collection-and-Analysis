@@ -1,8 +1,3 @@
-__author__ = "geduldig"
-__date__ = "February 7, 2013"
-__license__ = "MIT"
-
-
 import os
 
 
