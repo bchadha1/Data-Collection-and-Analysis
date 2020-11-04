@@ -1,6 +1,6 @@
 from requests.exceptions import ConnectionError, ReadTimeout, SSLError
 from requests.packages.urllib3.exceptions import ReadTimeoutError, ProtocolError
-from .TwitterError import *
+from TwitterError import *
 import requests
 import time
 

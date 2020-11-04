@@ -1,5 +1,5 @@
-from .BearerAuth import BearerAuth as OAuth2
-from .constants import *
+from BearerAuth import BearerAuth as OAuth2
+from constants import *
 from datetime import datetime
 from requests.exceptions import ConnectionError, ReadTimeout, SSLError
 from requests.packages.urllib3.exceptions import ReadTimeoutError, ProtocolError
