@@ -4,7 +4,7 @@ from datetime import datetime
 from requests.exceptions import ConnectionError, ReadTimeout, SSLError
 from requests.packages.urllib3.exceptions import ReadTimeoutError, ProtocolError
 from requests_oauthlib import OAuth1
-from .TwitterError import *
+from TwitterError import *
 import json
 import requests
 import socket
