@@ -11,6 +11,7 @@ import socket
 import ssl
 import time
 import os
+from pymongo import MongoClient
 
 DEFAULT_USER_AGENT = os.getenv('DEFAULT_USER_AGENT', 'python-TwitterAPI')
 DEFAULT_CONNECTION_TIMEOUT = os.getenv('DEFAULT_CONNECTION_TIMEOUT', 5)
