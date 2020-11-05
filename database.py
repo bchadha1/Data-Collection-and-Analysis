@@ -1,3 +1,7 @@
+import tweepy
+from tweepy import OAuthHandler
+from tweepy import Stream
+from tweepy.streaming import StreamListener
 import json
 import os
 import pymongo
@@ -9,6 +13,7 @@ uri = "mongodb://127.0.0.1:27017/?compressors=zlib&readPreference=primary&gssapi
 client = pymongo.MongoClient(uri)
 db = client.test
 collection = db['Twitter Data']
+
 
 def stream_generator(text):
     dic = []
