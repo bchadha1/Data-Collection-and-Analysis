@@ -19,12 +19,6 @@ DEFAULT_CONNECTION_TIMEOUT = os.getenv('DEFAULT_CONNECTION_TIMEOUT', 5)
 DEFAULT_STREAMING_TIMEOUT = os.getenv('DEFAULT_STREAMING_TIMEOUT', 90)
 DEFAULT_REST_TIMEOUT = os.getenv('DEFAULT_REST_TIMEOUT', 5)
 
-uri = "mongodb://127.0.0.1:27017/?compressors=zlib&readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB" \
-      "%20Compass&ssl=false "
-client = pymongo.MongoClient(uri)
-db = client.test
-collection = db['Twitter Data']
-
 
 class TwitterAPI(object):
     # static properties to be overridden if desired
