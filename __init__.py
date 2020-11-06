@@ -21,5 +21,5 @@ __all__ = [
     'TwitterConnectionError',
     'TwitterRequestError',
     'TwitterOAuth',
-    'TwitterPager'
+    'TwitterPager',
 ]
