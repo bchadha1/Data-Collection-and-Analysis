@@ -8,8 +8,8 @@ from mongoengine import *
 
 uri = "mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb"
 connect(
+    db='A5',
     host=uri,
-    db='A5'
 )
 
 class Threads(DynamicDocument):
