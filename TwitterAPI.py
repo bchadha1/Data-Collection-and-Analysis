@@ -1,6 +1,8 @@
 from BearerAuth import BearerAuth as OAuth2
 from constants import *
 from datetime import datetime
+import urllib
+from mongoengine import *
 from requests.exceptions import ConnectionError, ReadTimeout, SSLError
 from requests.packages.urllib3.exceptions import ReadTimeoutError, ProtocolError
 from requests_oauthlib import OAuth1
@@ -13,6 +15,12 @@ import time
 import os
 import pymongo
 from pymongo import MongoClient
+
+uri = "mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb"
+connect(
+    db='A5',
+    host=uri,
+)
 
 
 DEFAULT_USER_AGENT = os.getenv('DEFAULT_USER_AGENT', 'python-TwitterAPI')
