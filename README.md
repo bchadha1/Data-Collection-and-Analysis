@@ -1,2 +1,2 @@
 # Data-Collection
-Twitter and Robinhood Data Collection and Analysis System
+Twitter and 4Chan Data Collection and Analysis System
