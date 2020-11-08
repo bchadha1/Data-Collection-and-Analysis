@@ -22,7 +22,6 @@ connect(
     host=uri,
 )
 
-
 DEFAULT_USER_AGENT = os.getenv('DEFAULT_USER_AGENT', 'python-TwitterAPI')
 DEFAULT_CONNECTION_TIMEOUT = os.getenv('DEFAULT_CONNECTION_TIMEOUT', 5)
 DEFAULT_STREAMING_TIMEOUT = os.getenv('DEFAULT_STREAMING_TIMEOUT', 90)
@@ -379,3 +378,8 @@ class _StreamingIterable(object):
                 except ValueError as e:
                     # invalid JSON string (possibly an unformatted error message)
                     raise TwitterConnectionError(e)
+
+
+fhOut = open("output.json", "a")
+
+fhOut.close()
