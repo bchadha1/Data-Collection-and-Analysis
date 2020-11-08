@@ -12,6 +12,7 @@ connect(
     host=uri,
 )
 
+
 class Threads(DynamicDocument):
 
     def commcount(self):

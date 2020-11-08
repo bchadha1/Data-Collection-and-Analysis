@@ -18,7 +18,7 @@ from pymongo import MongoClient
 
 uri = "mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb"
 connect(
-    db='A5',
+    db='A6',
     host=uri,
 )
 
