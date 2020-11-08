@@ -6,9 +6,9 @@ import urllib
 import requests
 from mongoengine import *
 
-uri = "mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb"
+uri = "mongodb://127.0.0.1:27017/?compressors=zlib"
 connect(
-    db='A5',
+    db='admin',
     host=uri,
 )
 

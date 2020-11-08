@@ -16,11 +16,11 @@ import os
 import pymongo
 from pymongo import MongoClient
 
-uri = "mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb"
-connect(
-    db='A6',
-    host=uri,
-)
+# uri = "mongodb://127.0.0.1:27017/?compressors=zlib&gssapiServiceName=mongodb"
+# connect(
+#     db='A6',
+#     host=uri,
+# )
 
 
 DEFAULT_USER_AGENT = os.getenv('DEFAULT_USER_AGENT', 'python-TwitterAPI')
