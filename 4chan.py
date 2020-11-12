@@ -1,4 +1,3 @@
-# importing packages
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime as dt
@@ -56,8 +55,7 @@ class utillabstract(object):
         substitued_text = str(text)
         return substitued_text
 
-    # parsing the html content and stripping the special characters in it if exists
-    # calling the re expression replace function 
+    # parsing the html content and stripping the special characters in it if exists, calling the re expression replace function 
     def parse_remove(self, cd):
         # taking the content of html 4chan page into beautifulsoup object using lxml
         soup_object = BeautifulSoup(str(cd), 'lxml')
