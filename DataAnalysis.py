@@ -13,7 +13,6 @@ import nltk, re
 import time
 import textblob
 import vaderSentiment
+from textblob import *
 
-
-def get_time_stamp():
-    return time.strftime("%y%m%d-%H%M%S-%Z")
+analysis = TextBlob("TextBlob sure looks like it has some interesting features!")
