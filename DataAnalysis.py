@@ -6,14 +6,10 @@ import pandas as pd
 import matplotlib as mtp
 import pymongo
 import mongoengine
-import time
 import pyspark
 import cv2
-
 import sys, os, random
 import nltk, re
-import collections
-
 import time
 
 
