@@ -15,5 +15,8 @@ import textblob
 import vaderSentiment
 from textblob import *
 
+# Textblob is for sentiment classification accuracy
+# Vader is for classification
+
 analysis = TextBlob("TextBlob sure looks like it has some interesting features!")
 print(dir(analysis))
