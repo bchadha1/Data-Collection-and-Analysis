@@ -16,3 +16,4 @@ import vaderSentiment
 from textblob import *
 
 analysis = TextBlob("TextBlob sure looks like it has some interesting features!")
+print(dir(analysis))
