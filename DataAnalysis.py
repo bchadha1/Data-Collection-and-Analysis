@@ -8,10 +8,6 @@ import pymongo
 import mongoengine
 import time
 import pyspark
-
-import graphx
-import rdd.RDD
-
 import cv2
 
 import sys, os, random
@@ -121,7 +117,7 @@ def getTrainingAndTestData(tweets, K, k, method, feature_set):
         else:
             words_bi = []
 
-        if (add_ngram_feat >= 3):
+        if add_ngram_feat >= 3:
             words_tri = ['has(%s)' % ','.join(map(str, tg)) for tg in nltk.trigrams(words)]
         else:
             words_tri = []
