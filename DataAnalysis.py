@@ -12,7 +12,7 @@ import sys, os, random
 import nltk, re
 import time
 import textblob
-
+import vaderSentiment
 
 
 def get_time_stamp():
