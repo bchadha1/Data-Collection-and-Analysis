@@ -8,7 +8,8 @@ import mongoengine
 import pyspark
 import cv2
 import sys, os, random
-import nltk, re
+import nltk
+import re
 import time
 import textblob
 import vaderSentiment
