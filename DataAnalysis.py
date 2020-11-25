@@ -93,8 +93,7 @@ def negated(input_words, include_nt=True):
 
 def normalize(score, alpha=15):
     """
-    Normalize the score to be between -1 and 1 using an alpha that
-    approximates the max expected value
+    Normalize the score to be between -1 and 1 using an alpha that approximates the max expected value
     """
     norm_score = score / math.sqrt((score * score) + alpha)
     if norm_score < -1.0:
