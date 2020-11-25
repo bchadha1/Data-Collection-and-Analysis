@@ -88,7 +88,7 @@ def negated(input_words, include_nt=True):
             return True'''
     return False
 
-
+# normalize function
 def normalize(score, alpha=15):
     """
     Normalize the score to be between -1 and 1 using an alpha that approximates the max expected value
