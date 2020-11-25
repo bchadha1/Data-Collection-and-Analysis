@@ -8,8 +8,6 @@ from itertools import product
 from inspect import getsourcefile
 from io import open
 
-# ##Constants##
-
 # (empirically derived mean sentiment intensity rating increase for booster words)
 B_INCR = 0.293
 B_DECR = -0.293
