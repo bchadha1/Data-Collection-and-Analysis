@@ -101,7 +101,7 @@ def normalize(score, alpha=15):
     else:
         return norm_score
 
-
+# All CAPS words
 def allcap_differential(words):
     """
     Check whether just some words in the input are ALL CAPS
