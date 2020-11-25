@@ -205,9 +205,7 @@ class SentimentIntensityAnalyzer(object):
         return lex_dict
 
     def make_emoji_dict(self):
-        """
-        Convert emoji lexicon file to a dictionary
-        """
+        """ Convert emoji lexicon file to a dictionary """
         emoji_dict = {}
         for line in self.emoji_full_filepath.rstrip('\n').split('\n'):
             (emoji, description) = line.strip().split('\t')[0:2]
