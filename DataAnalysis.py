@@ -26,9 +26,6 @@ NEGATE = \
      "oughtn't", "shan't", "shouldn't", "uh-uh", "wasn't", "weren't",
      "without", "wont", "wouldnt", "won't", "wouldn't", "rarely", "seldom", "despite"]
 
-# booster/dampener 'intensifiers' or 'degree adverbs'
-# http://en.wiktionary.org/wiki/Category:English_degree_adverbs
-
 BOOSTER_DICT = \
     {"absolutely": B_INCR, "amazingly": B_INCR, "awfully": B_INCR,
      "completely": B_INCR, "considerable": B_INCR, "considerably": B_INCR,
