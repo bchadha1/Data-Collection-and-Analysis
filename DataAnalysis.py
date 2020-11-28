@@ -45,4 +45,4 @@ mw = df['senti_score']
 mw
 
 sns.distplot([mw])
-#[mw].mean()
+[mw].mean()
