@@ -12,9 +12,6 @@ connect(
     # The db is already present in the mongodb community server edition(mongodb compass),if not it will create one
     host=uri
 )
-
-
-# now entering into collection class of the db which is threads class
 class Threads(DynamicDocument):
 
     # time stamp
