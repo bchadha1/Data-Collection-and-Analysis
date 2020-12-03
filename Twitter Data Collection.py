@@ -55,8 +55,7 @@ def main():
           "created_at,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets," \
           "source,text,withheld&expansions=referenced_tweets.id "
     timerem = 0
-
-    # calling the fucntion connection_to_twitt and incrementation
+    
     while connection_to_twitt(url, headers):
         timerem = timerem + 1
 
