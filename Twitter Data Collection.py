@@ -3,7 +3,6 @@ import json
 import pymongo
 from pymongo import MongoClient
 
-# establishing mongodb connection using pymongo
 MONGO_HOST = pymongo.MongoClient('mongodb://127.0.0.1:27017/')
 db = MONGO_HOST.sw
 
